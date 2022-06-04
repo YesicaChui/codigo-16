@@ -1,0 +1,70 @@
+
+
+h1{
+    color: red;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    color: rgb(128, 47, 0);
+    background-color: rgb(196, 184, 179);
+    font-weight: bold;
+    font-size: 20px;
+    height: 60px;
+}
+
+td{
+    height: 50px;
+    vertical-align: center;
+}
+
+.fila_par{
+    background-color: rgb(231, 218, 195);
+}
+
+.fila_impar{
+    background-color: rgb(133, 187, 139);
+}
+
+.filaPar{
+
+}
+
+.bannerDeMiEscuela{
+
+}
+
+.banner_de_mi_escuela{
+
+}
+
+tr:hover{
+    background-color: blueviolet;
+}
+#caja1{
+    width: 100px;
+    height: 100px;
+    border: 10px dotted blueviolet;
+    padding: 5px 40px 5px 16px;
+    margin: 10px;
+    display: none;
+}
+#caja2{
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgb(43, 226, 52);
+    display: none;
+    
+}
+p{
+    display: inline;
+}
+

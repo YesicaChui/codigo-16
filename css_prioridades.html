@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css_prioridades.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de prioridad</title>
+</head>
+<body>
+    <h1>
+        Las prioridades para aplicar estilos son:
+    </h1>
+    <hr>
+    <table id="mitabla">
+        <tr>
+            <th>#prioridad</th>
+            <th>Origen</th>
+            <th>Selector / ejemplo</th>
+        </tr>
+        <tr class="fila_impar">
+            <td>1</td>
+            <td>hojas de estilos + important</td>
+            <td>color: red !important;</td>
+        </tr>
+        <tr class="fila_par">
+            <td>2</td>
+            <td>inline css</td>
+            <td>h1 style="color: red;"</td>
+        </tr>
+        <tr class="fila_impar">
+            <td>3</td>
+            <td>nested id</td>
+            <td>div#mi_selector_ID</td>
+        </tr>
+        <tr class="fila_par">
+            <td >4</td>
+            <td>Selector de id</td>
+            <td>#mi_selector_ID</td>
+        </tr>
+        <tr class="fila_impar">
+            <td>5</td>
+            <td>nested class</td>
+            <td>div.mi_selector_clase</td>
+        </tr>
+        <tr class="fila_par">
+            <td>6</td>
+            <td>Selector de clase</td>
+            <td>.mi_selector_clase</td>
+        </tr>
+        <tr class="fila_impar">
+            <td>7</td>
+            <td>selector de Etiqueta</td>
+            <td>h1{atributo:valor}</td>
+        </tr>
+    </table>
+
+    <div id="caja1">
+        <p>hola</p>
+    </div>
+    <div id="caja2"><p>hola2</p></div>
+</body>
+</html>
