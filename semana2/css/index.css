@@ -1,17 +1,70 @@
 h1{
-    font-family: apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 45px;
     font-weight: 900;
     text-decoration: underline;
 }
 .parrafo{
-    font-family: "Dank Mono",monospace;
+    font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
 .link-a{
+    font-family: 'Dancing Script', cursive;
     text-decoration: none;
     font-size: 32px;
-    color: rgb(30, 0, 255);
+    color: rgb(255, 0, 89);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    background-color: rgba(255, 0, 89,0.3);
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.span-1{
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+.span-2{
+    text-decoration: overline;
+}
+.span-3{
+    text-decoration: underline;
+    color: blue;    
+}
+.span-4{
+    text-decoration: line-through;
+    text-decoration-color: #f01;
+}
+.span-5{
+    text-decoration: overline;
+    background-color: #0ba;
+    text-decoration-color: #fff;
+}
+.span-6{
+    text-decoration: underline;
+    background-color: rgb(252,90,255);
+    text-decoration-color: rgb(255, 241, 90);
+    text-transform: lowercase;
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/Righteous-Regular.ttf");
+}
+@font-face {
+    font-family: "miblaka";
+    src: url("../fonts/Blaka-Regular.ttf");
+}
+
+.title-2{
+    font-family: "Righteous";
+}
+.parrafo_personal{
+    font-family: "miblaka";
 }

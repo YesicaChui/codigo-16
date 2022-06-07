@@ -1,8 +1,14 @@
 
+body{
+    background-color: rgba(42, 189, 142,0.5);
+}
 
 h1{
     color: red;
     text-align: center;
+    font-family: miblaka;
+    text-decoration: underline;
+    text-decoration-color: brown;
 }
 table{
     width: 100%;
@@ -19,11 +25,14 @@ th{
     font-weight: bold;
     font-size: 20px;
     height: 60px;
+    font-family: pacifico;
 }
 
 td{
     height: 50px;
     vertical-align: center;
+    font-family: lobster;
+    color: rgb(125, 58, 105);
 }
 
 .fila_par{
@@ -68,3 +77,15 @@ p{
     display: inline;
 }
 
+@font-face {
+    font-family: "miblaka";
+    src: url("./semana2/fonts/Blaka-Regular.ttf");
+}
+@font-face {
+    font-family: "lobster";
+    src: url("./semana2/fonts/Lobster-Regular.ttf");
+}
+@font-face {
+    font-family: "pacifico";
+    src: url("./semana2/fonts/Pacifico-Regular.ttf");
+}
