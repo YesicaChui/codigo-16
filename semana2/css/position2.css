@@ -1,0 +1,32 @@
+
+body{
+    font-family: Verdana;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+ul li{
+    display: inline-block;
+   
+}
+ul{
+    padding:20px;
+}
+
+nav{
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div{
+    position: relative;
+    top: 100px;
+}
+#nosotros{
+    height: 100vh;
+}

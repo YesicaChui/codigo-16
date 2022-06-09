@@ -1,0 +1,54 @@
+.bg-box{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    /* para mover este elemento por todo el navegador*/
+    position: relative;
+
+}
+
+/*Esta la opcion de combinar absolute con relative*/
+/*Absolute necesita de un padre que defina su entorno es decir ancho y alto*/
+.padre{
+    width: 500px;
+    height: 500px;
+    background: aqua;
+    position: relative;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);  
+}
+.bandera{
+    height: 100vh;
+    border: solid;
+    position: relative;
+}
+.green{
+    height: 100vh;
+    background-color: green;
+    width: 40%;
+    float: left;
+}
+.red{
+    height: 100vh;
+    background-color: red;
+    width: 60%;
+    float: right;
+}
+
+.escudo{
+    background: url("../img/Coat_of_arms_of_Portugal.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(40% - 200px);
+}
