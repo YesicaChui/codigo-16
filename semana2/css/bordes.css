@@ -1,0 +1,66 @@
+html{
+    font-size:67.5%;/* equivale a 10px relativos*/
+}
+
+body{
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+h1{
+    font-size:2rem;
+}
+p{
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.solid{
+    border-style: solid;
+    border-color: brown;
+    border-width: 5px;
+}
+.dashed{
+    border-style: dashed;
+    border-color: green;
+    border-width: 2px;
+    
+}
+.double{
+    border-style: double;
+    border-width: 5px;
+}
+.dotted{
+    border-width: 8px;
+    border-style: dotted;
+}
+.groove{
+    border-width: 10px;
+    border-style: groove;
+   
+}
+.ridge{
+    border-width: 10px;
+    border-style: ridge;
+}
+.inset{
+    border: 10px  inset blue ;
+}
+
+.left_solid{
+    border-left:  solid 8px pink;
+}
+
+.rightDotted{
+    border-right: dotted 1px red;
+    border-bottom: solid 1px green;
+    border-top: dashed 2px brown;
+}
+.mix-border{
+   border-style: dotted solid double dashed;
+   border-width: 3px 5px 8px 12px;
+   border-color: blue red green blueviolet;
+
+}
