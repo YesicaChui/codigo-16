@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(168,154,154);
+}
+#contenedor{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 20px;
+}
+#campos{
+    padding: 40px;
+    text-align: center;
+}
+
+#user{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#pass{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form-control{
+    margin-top: 20px;
+}
+
+#user:focus{
+    height: 40px;
+    border: 1px dotted blue;
+}
+#submit{
+    height: 30px;
+    width: 90px;
+    
+    background-color: rgb(115, 115, 187);
+    box-shadow: 5px 5px 5px gray;
+}
+#submit:hover{
+    
+    background-color: rgb(164, 187, 115);
+    transform: scale(0.5);
+}

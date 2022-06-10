@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(190, 190, 190);
+}
+
+#contenedor{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(red  0%, pink ,green,orange , blue , yellow 100%);
+    margin: auto;
+}
+
+.sombra{
+    box-shadow: 20px 20px 20px  black;
+   
+}
+
+.sombraText{
+    text-shadow:  10px 10px 5px yellow;
+}
+
+.bandera{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right,red 33.3%,white 33% 66.6%,red 66.6% );
+    margin: auto;
+}
+#circulo{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(red 16%,white 16% 45%, red 45%);
+   /*  background-color: blue; */
+    margin: 60px auto;
+    border-radius: 100px;
+    filter: /* blur(10px) */ grayscale(100%);
+    
+}
+#circulo:hover{
+    background: none;
+    filter:none;
+    background-color: blue;
+}
+h1:hover{
+    font-size: 40px;
+}
