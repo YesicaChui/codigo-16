@@ -1,0 +1,9 @@
+.nav{
+    border: solid;
+    height: 70px;
+}
+
+.logo{
+    float:left;
+    position: relative;
+}
