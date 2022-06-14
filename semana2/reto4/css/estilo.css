@@ -1,0 +1,62 @@
+
+body{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #1c253f;
+    font-size: 10px;
+  
+   height: 100vh;
+}
+main{
+    width: 30vw;
+    margin: auto;
+    top: 25%;
+    position: relative;   
+}
+img{
+    width: 50px;
+    border-radius: 45px;
+}
+.perfil{
+    padding: 15px 20px;
+    background-color: #22326b;    
+    border-radius: 8px; 
+    color: white;  
+
+    width: 100%;
+}
+
+h1{
+    color: white;
+}
+
+
+.cabecera{
+    width: 100%;
+    padding-right: 7px;
+}
+input{
+    width: 100%;
+
+}
+button{
+    width: 100%;
+    margin-left: 8px;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+    background-color: #0d6efd;
+}
+
+.tablaPrincipal{
+    width: 100%;
+}
+.cInput{
+    width: 60%;
+}
+.cButton{
+    width: 40%;
+}
+
+td{
+    vertical-align: top;
+}
