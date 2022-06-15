@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #374151;
+}
+hr{
+    width: 100px;
+    height: 2px;
+    background-color: #374151;
+    border: none;
+    border-radius: 4px;
+
+}
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container div{
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px;
+    background-size: cover;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+.small-child{
+    width: 20%;
+}
+.big-child{
+    width: 60%;
+}
+.child-one{
+    background: url("./images/zapatos.svg");
+}
+.child-two{
+    background: url("./images/reloj.svg");
+}
+.child-three{
+    background: url("./images/ropa.svg");
+}
+.child-four{
+    background: url("./images/bolso.svg");
+}
+h2{
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+}
+
+.big-child-2{
+    width: 60%;
+    margin: auto;
+}
+section{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    max-width: 291px;
+    text-align: left;
+    border: solid 1px rgba(249,250,251,0.5);
+}
+
+section *{
+    margin-left: 10px;
+}
+
+section h5:first-child{
+    font-size: 18px;   
+}
+section h5:last-child{
+    font-size: 14px;
+}
+section p{
+    font-size: 12px;
+    font-weight: 100;
+}
