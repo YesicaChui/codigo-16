@@ -1,0 +1,28 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition: width 4s, height 4s, background-color 4s;
+}
+
+#box:hover{
+    width: 400px;
+    height: 400px;
+    transform: translate(50px,50px);
+    background: linear-gradient(to right, red 33.3%,white 33.3%,white 66.6%,red 66.6%);
+    /* transition: width 2s, height 2s,background-color 2s, transform 2s; */
+    transition: all 2s;
+}
+body{
+    display: flex;
+}
+div{
+    
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.white:hover{
+    background-color: white;
+    transition: background-color 2s;
+}

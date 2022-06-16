@@ -33,7 +33,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    text-align: center;
+    /* text-align: center; */
 }
 .small-child{
     width: 20%;
@@ -59,10 +59,10 @@ h2{
     font-size: 56px;
 }
 
-.big-child-2{
+/* .big-child-2{
     width: 60%;
     margin: auto;
-}
+} */
 section{
     background-color: rgba(0,0,0,0.3);
     color: #fff;
@@ -85,3 +85,88 @@ section p{
     font-size: 12px;
     font-weight: 100;
 }
+.container2{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.articulo{
+    width: 20%;
+    margin: 20px;    
+}
+
+.articulo h3{
+    font-weight: 400;
+    line-height: 22px;
+}
+
+ .container2 .articulo img{
+    width: 100%;
+}
+
+.articulo div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.articulo div div:last-child{
+    font-weight: bold;
+    color:  #374151;
+} 
+.articulo div div:first-child p:first-child{
+    font-weight: bold;
+    color:  #374151;
+}
+.articulo div div:first-child p:last-child{
+    text-decoration: line-through;
+}
+.articulo div div:first-child{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    h2{
+        font-size: 32px;
+    }
+  } 
+
+@media only screen and (max-width: 800px) {
+    .small-child{
+        width: 35%;
+    }
+    .big-child{
+        width: 40%;
+    }
+    .container2{
+        display: flex;        
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    .articulo{
+        width: 35%;
+        margin: 20px;    
+    }
+  }
+  
+
+  @media only screen and (max-width: 530px) {
+
+    .small-child{
+        width: 100%;
+    }
+    .big-child{
+        width: 100%;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .articulo{
+        width: 85%;
+        margin: 20px;    
+    }
+  }
