@@ -1,0 +1,160 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #666;
+    background-color: #c9c9c9;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 20px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  header a:hover {
+    color: #b2dfdb;
+    transition: all 0.5s;
+  }
+  
+  /* DROPDOWN: Menu desplegable */
+  .dropdown {
+    display: block;
+  }
+  
+  /* El menú escondido */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    margin-left: -10%;
+  }
+  
+  /* Cada elemento del menú escondido */
+  .dropdown-content li {
+    display: block;
+    padding: 20px 10px;
+  }
+  
+  /* Las anclas que estén dentro de cada elemento del menú escondido */
+  .dropdown-content li a {
+    text-decoration: none;
+    color: #666;
+  }
+  .dropdown-content li a:hover {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-content (menu) los estilos:
+  */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-button (botón) los estilos:
+  */
+  .dropdown:hover .dropdown-button {
+    text-decoration: underline;
+  }
+  main{
+    width:100%;
+  }
+
+  #container{
+    margin: 50px auto;
+    width: 70%;
+  }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.row > div{
+    width: 25%;
+    text-align: center;
+}
+.th{
+    font-weight: bolder;
+    color: white;
+    background-color: #333;
+    border-radius: 10px 10px 0px 0px;
+}
+.tr{
+    background: var(--yesica);
+    border-bottom: 1px #666 dashed;
+}
+.tr:nth-child(even){
+    background-color: white;
+}
+.tr:last-child{
+    border-bottom: 1px #666 solid;
+    border-radius: 0 0 10px 10px;
+}
+/* .td{
+    background-color: #333;
+} */
+
+  @media only screen and (max-width: 992px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 15%;
+      padding: 20px;
+    }
+  
+    header:hover {
+      width: 20%;
+      padding: 20px 50px;
+      transition: all 1s;
+    }
+  
+    header ul {
+      margin-top: 20px;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .dropdown-content {
+      margin-top: 0px;
+      margin-left: 40px;
+    }
+
+    #page{
+        display: flex;
+    }
+
+  }
+
+  
