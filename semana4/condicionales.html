@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Condicionales</title>
+<!--     <style>
+        .frio{
+            color:blue;
+            font-weight: 900;
+        }
+        .templado{
+            color:aqua;
+            font-weight: 900;
+        }
+        .calido{
+            color:brown;
+            font-weight: 900;
+        }
+        .tropical{
+            color:green;
+            font-weight: 900;
+        }
+    </style> -->
+<!--     <style>
+        .rojo{
+            color:red;
+            font-weight: 900;
+        }
+        .azul{
+            color:blue;
+            font-weight: 900;
+        }
+    </style> -->
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Martes 21 de Junio</h1>
+    <h2>Condicionales + document.write()</h2>
+    <hr>
+</body>
+<script>
+    /* let nota=20;
+    document.write(`<h3>${nota}</h3>`); */
+
+
+   /*  Usando esta tablita, deben hacer una pagina que le pida (prompt) al usuario, ingresar la temperatura.
+
+En base a la temp ingresada, vamos a pintar (write) el mensaje del clima.
+
+El mensaje deberá estar en el color que represente al clima.
+- Frio: azul
+- Templado: celeste
+- Cálido: Marron
+- Tropical: verde */
+
+/* let temperatura=Number(prompt("Escriba la temperatura actual"));
+if(temperatura<10){
+    document.write("<p class='frio'>Frio</p>");
+}else if(temperatura<=16){
+    document.write("<p class='templado'>Templado</p>");
+}
+else if(temperatura<=24){
+    document.write("<p class='calido'>Cálido</p>");
+}else {
+    document.write("<p class='tropical'>Tropical</p>");
+} */
+
+/* let nombre="Magaly";
+let edad=29;
+let estado_civil='soltera';
+let numero_hijos=1;
+
+if(edad>30 || estado_civil==='casada' || numero_hijos > 0){
+    document.write("<p>Buen día sra. " + nombre + "</p>");
+
+}else{
+    document.write("<p>Buen día señorita "+ nombre + "</p>");
+} */
+
+// let nota;
+// nota=14;
+
+/* if(nota<=10){
+    document.write("<p>estas desaprobado</p>");
+}else {
+    document.write("<p>Estas aprobado</p>");
+} */
+/* if(nota<=10){
+    document.write("<p>Tu nota es C</p>");
+}else if(nota<=14){
+    document.write("<p>Tu nota es B</p>");
+}else if(nota<=17){
+    document.write("<p>Tu nota es A</p>");
+}else if(nota<=20){
+    document.write("<p>Tu nota es AD</p>");
+}else{
+    document.write("<p>Nota invalida</p>");
+
+} */
+/* let condicion;
+condicion=false;
+
+if(condicion){
+    alert("caso verdadero");
+}else{
+    alert("caso falso");
+} */
+//Indicar si la persona es mayor o menor de edad
+/* let edad;
+edad=Number(prompt("Ingrese su edad"));
+if(edad>=18){
+    alert("Eres mayor de edad");
+}else{
+    alert("Eres menor de edad");
+} */
+
+//indicar si aprobo o no segun la nota
+/* let notaExamen;
+notaExamen=Number(prompt("Ingrese la nota de su examen"));
+if(notaExamen>=11){
+    // alert("Estas aprobado");
+    document.write("<p class='azul'>Estas aprobado</p>");
+}else{
+    document.write("<p class='rojo'>Estas desaprobado</p>");
+    // alert("Estas desaprobado")
+} */
+// document.write("<p>hola mundo</p>");
+let nombre;
+let sexo;
+let edad;
+let nota;
+let tipoNota;
+let calificativo;
+let color="";
+nombre=prompt("Ingrese su nombre");
+sexo=prompt("Ingrese su sexo Hombre o Mujer");
+edad=Number(prompt("Ingrese su edad"));
+nota=Number(prompt("Ingrese su nota"));
+if(nota>=0&&nota<3){
+    tipoNota="Muy deficiente";
+    color="red";
+}else if(nota>=3&&nota<5){
+    tipoNota="Insuficiente";
+}else if(nota>=5&&nota<6){
+    tipoNota="Suficiente";
+}else if(nota>=6&&nota<7){
+    tipoNota="Bien";
+}else if(nota>=7&&nota<9){
+    tipoNota="Notable";
+}else if(nota>9&&nota<=10){
+    tipoNota="Sobresaliente";
+    color="green"
+}else{
+    tipoNota="Incorrecta la Nota";
+}
+if(sexo=="Hombre"){
+    if(edad>35){
+        calificativo="El Sr.";
+    }else{
+        calificativo="El Joven";
+    }
+}else{
+    if(edad>=50){
+        calificativo="La Sra.";
+    }else{
+        calificativo="La Srta.";
+    }
+}
+document.write("<p class="+color+">"+calificativo+" "+nombre+" ("+edad+" años) tiene "+nota+" de nota. Esta "+tipoNota+"</pc>")
+
+
+</script>
+</html>
