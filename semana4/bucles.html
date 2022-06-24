@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin:20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container"></div>
+
+    
+    <!-- <div id="karen" class="container"></div> -->
+</body>
+<script>
+    const div_container = document.getElementById('container');
+    div_container.innerHTML="<h1>bucles</h1>";
+    
+    /*     const div_karen=document.getElementById("karen");
+    div_karen.innerHTML="Karen cariñosa" */
+    let frutas = ['pera', 'manzana','limon', 'fresa', 'naranja']
+
+    // div_container.innerHTML+= "<p>"+frutas[1]+"</p>";
+/*     let iter=0;
+    while(iter<frutas.length){
+        
+       //es lo mismo que iter=iter+1 tambien iter++
+        // iter+=2;//es lo mismo que iter=iter+2
+        if(frutas[iter]=='limon'){
+           break;
+        }
+        iter+=1;
+        div_container.innerHTML+= "<p>"+frutas[iter]+"</p>";     
+        
+    } */
+    div_container.innerHTML+="<hr>";
+    for(let iter=0;iter<frutas.length;iter++){
+        if(frutas[iter]=="limon"){
+            continue;
+        }
+        //for(inicializacion;condicion;incremento)
+        div_container.innerHTML+= "<p>"+frutas[iter]+"</p>"
+    }
+    div_container.innerHTML+="<hr>";
+    //---------
+    //utilizando for
+    //imprimer la tabla del 1 al 20 (del numero 15);
+    //1 x 2 = 2
+    //2 x 2 = 4
+    //...
+    //17x2 =34
+    //18x2=36
+    //19x2=38
+    //20x2=40
+    //iter x numero=resultado
+
+/*     const numero = 15
+    for(let iter=1;iter<=20;iter++){
+        div_container.innerHTML+= "<p>"+iter+" x "+numero+" = "+iter*numero+"</p>";
+    } */
+/*     const numero_tablas=5;
+
+    for(let i=1;i<=numero_tablas;i++){
+        div_container.innerHTML+= "<h2> Tabla del "+i+"</h2>";
+        for(let j=1;j<=10;j++){
+            if(j%2==0)  continue;
+            
+            div_container.innerHTML+= "<p>"+i+" x "+j+" = "+j*i+"</p>";
+        }
+    } */
+/*     let productos =[
+        'mouse',
+        'teclado',
+        'parlante',
+        'monitor',
+        'celular',
+        'adaptador',
+        'cargador'
+    ]
+    for (const producto of productos) {
+        div_container.innerHTML+= "<p>"+producto+"</p>";
+    } */
+
+    const frase = "Amo programar";
+
+    for(let letra of frase){
+        div_container.innerHTML+= "<p>"+letra+"</p>"
+    }
+</script>
+</html>

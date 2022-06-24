@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin:20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container"></div>
+</body>
+<script>
+    const div_container=document.getElementById('container');
+    div_container.innerHTML="<h1>Ejercicios Bucles</h1>";
+    //Suma de numeros positivos de 2 cifras que terminan en 7;
+    /* let SumaCifraTermina7=0;
+    for(let i=10;i<=99;i++){
+        if(i%10==7) SumaCifraTermina7+=i;
+    }
+    div_container.innerHTML="<h1>"+SumaCifraTermina7+"</h1>"; */
+
+    const cantidad_primos=25;
+    let nro_primos=0;
+    let verificador=0;
+    let respuesta="";
+    let i=2;
+    while(nro_primos<25){//1<25 
+        verificador=0;
+        for(let j=2;j<i;j++){ //2<4
+            if(i%j==0) verificador=1;
+        }
+        if(verificador==0){
+         respuesta+=i+" - ";
+         nro_primos++;
+        }   
+        i++;
+    }
+    div_container.innerHTML+="<h1>"+respuesta+"</h1>"; 
+</script>
+</html>
