@@ -69,6 +69,24 @@
     font-size: 1em;
     font-weight: bold;
   }
+
+  .section {
+    text-align: center;
+  }
+  
+  #input-search {
+    padding: 8px;
+    width: 300px;
+  }
+  
+  #btn-search {
+    border: solid rgb(12, 145, 101);
+    padding: 8px;
+    background-color: rgb(12, 145, 101);
+    width: 120px;
+    border-radius: 4px;
+    color: #fff;
+  }
   @media only screen and (max-width: 600px) {
     .card {
       width: 100%;
