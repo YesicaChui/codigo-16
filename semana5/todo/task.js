@@ -11,26 +11,68 @@ class Task {
     }
 
     done() {
-        this.status = 'done';
+        this.changeStatus('done')
+/*         this.status = 'done';
         this.done_at = new Date(); // fecha y hora actual.
-        document.querySelector('#' + this.id).classList.add('done');
+        const element =document.querySelector('#' + this.id);
+        element.classList.add('done');
+        element.classList.remove("todo"); */
     }
 
     delete() {
-        this.status = 'delete';
+        this.changeStatus('delete')
+/*         this.status = 'delete';
         this.deleted_at = new Date();
-        document.querySelector("#"+this.id).classList.add('delete');
+        const element=document.querySelector("#"+this.id);
+        element.classList.add('delete');
+        element.classList.remove("todo"); */
     }
 
-    createElement() {
+    changeStatus(status) {
+        this.status = status;
+        status=="delete"?( this.deleted_at = new Date()):(this.done_at = new Date())
+        const element =document.querySelector('#' + this.id);
+        element.classList.add(status);
+        element.classList.remove("todo");
+    }
+
+/*     createElement() {
         const element = document.createElement('p');
         element.setAttribute('id', this.id);
-        element.setAttribute('class', 'task');
+        element.setAttribute('class', 'task todo');
         element.innerHTML = `
             <input type="checkbox" onchange="checkTask(this);">
             <span>${this.text}</span>
             <a onclick="deleteTask(this);">❌</a>
         `;
         return element; // elemento HTML
-    }
+    } */
+
+    update(newText) {
+        const element = document.querySelector(`#${this.id}`);
+        // children: Busca los elementos hijos
+        // Nota recurden que ponemos 0 porque p tiene 2 div hijos
+        // Versiona larga
+        // const primerDiv = element.children[0];
+        // const span = (primerDiv.children[1].textContent = newText);
+        // Version corta
+        element.children[0].children[1].textContent = newText;
+      }
+
+    createElement() {
+        const element = document.createElement("p");
+        element.setAttribute("id", this.id);
+        element.setAttribute("class", "task todo");
+        element.innerHTML = `
+          <div>
+            <input type="checkbox" onchange="checkTask(this);">
+            <span>${this.text}</span>
+          </div>
+          <div>
+             <a onclick="updateTask(this);">✏️</a>
+            <a onclick="deleteTask(this);">❌</a>
+          </div>
+            `;
+        return element; // elemento HTML
+      }
 }

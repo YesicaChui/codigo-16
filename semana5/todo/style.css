@@ -22,13 +22,13 @@ body{
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
-}
-
-.task > a {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .task > a {
     font-size: 0.8rem;
-    float: right;
-}
-
+  }
 .task > input {
     transform: scale(1.5);
     margin-right: 10px;
@@ -54,18 +54,18 @@ body{
     background-color: #338dad;
 }
 
-.delete > input {
+.delete > div > input {
     display: none;
 }
 
-.delete > span {
+.delete > div > span {
     margin-left: 30px;
     color: #aaa;
     font-style: italic;
     text-decoration: line-through red;
 }
 
-.delete > a {
+.delete > div > a {
     display: none;
 }
 
@@ -99,3 +99,4 @@ body{
     border: 1px solid #ddd;
     border-radius: 10px;
 }
+
