@@ -62,16 +62,14 @@ inputEmail.onkeyup=function(){
     const regex =
     /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/gm;
 
-    console.log(regex.test(value));
-    let validacion=regex.test(value);
-    if(validacion){
-        console.log("soy true");
-        console.log(validacion);        
-        emailError.style.backgroundColor = "red";
+    // console.log(regex.test(value));
+    // let validacion=regex.test(value);
+    if(regex.test(value)){
+        // console.log("soy true");              
+        emailError.style.display = "none";
     }else{
-        console.log("soy false");
-        console.log(validacion);
-        emailError.style.backgroundColor = "green";
+        // console.log("soy false");        
+        emailError.style.display = "block";
     }
     // regex.test(value)?emailError.style.display="none":emailError.style.display="block";
 }

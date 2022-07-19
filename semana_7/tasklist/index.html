@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <style>
+    body {
+      font-family: Helvetica;
+    }
+
+    .delete {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Task List</h1>
+        <section>
+          <input
+            type="text"
+            id="input-task"
+            autocomplete="off"
+            placeholder="Ingresa el nombre de la tarea"
+          />
+          <input type="button" id="btn-task" value="crear" />
+        </section>
+        <section id="section-task"></section>
+      </div>
+ 
+    </main>
+  </body>
+  <!-- !nota recurden que jquery debe estar antes, para que nuestro index.js pueda
+  !usar las funciones de jquery -->
+  <script src="./jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <script src="./task.js"></script>
+  <script src="./index.js"></script>
+</html>

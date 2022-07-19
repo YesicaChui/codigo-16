@@ -9,5 +9,5 @@ body{
 
 .email-error{
     color: red;
-    /* display: block; */
+    display: none;
 }
