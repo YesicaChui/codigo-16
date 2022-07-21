@@ -1,28 +1,31 @@
 const containerMovies = document.querySelector("#container-movies");
 
 function renderCards(movies) {
-  containerMovies.innerHTML = "";
-  movies.forEach((movie) => {
-    
-    containerMovies.innerHTML += `
-        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
-          <div class="card my-3" >
-            <img
-              src="${movie.images["Poster Art"].url}"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="card-title">${movie.title}</div>
-              <p class="card-text">
-               ${movie.description}
-              </p>
+    containerMovies.innerHTML = "";
+    movies.forEach((movie) => {
+      containerMovies.innerHTML += `
+          <div class="col">
+            <div class="card my-3" >
+            ${movie.programType=="series"?
+            `<span class="badge text-bg-danger">Series</span>`:
+            `<span class="badge text-bg-warning">Movie</span>`}
+              <img
+                src="${movie.images["Poster Art"].url}"
+                class="card-img-top"
+                onerror="this.onerror=null;this.src='https://i.quotev.com/img/q/u/15/12/25/78a31e5f80-imag.jpg';"
+                alt=""
+              />
+              <div class="card-body">
+                <div class="card-title">${movie.title}</div>
+                <p class="card-text">
+                 ${movie.description}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-    `;
-  });
-}
+      `;
+    });
+  }
 
 const url =
   "https://static.rviewer.io/challenges/datasets/dreadful-tomatoes/data.json";
